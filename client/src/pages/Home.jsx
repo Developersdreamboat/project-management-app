@@ -1,6 +1,6 @@
-import Clients from "./components/Clients";
-import Projects from "./components/Projects";
-import AddClientModal from "./components/AddClientModal";
+import Clients from "../components/Clients";
+import Projects from "../components/Projects";
+import AddClientModal from "../components/AddClientModal";
 
 export default function Project() {
   return (

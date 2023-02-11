@@ -3,7 +3,7 @@ import Header from './components/Header';
 import { ApolloProvider, ApolloClient, InMemoryCache } from '@apollo/client';
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
-import Project from './pages/Home';
+import Project from './pages/Project';
 
 const cache = new InMemoryCache({
   typePolicies: {
@@ -33,6 +33,7 @@ function App() {
   return (
     <>
       <ApolloProvider client={client}>
+        <Header />
         <Router>
           <div className="container">
             <Routes>
@@ -42,7 +43,6 @@ function App() {
             </Routes>
           </div>
         </Router>
-        <Header />
       </ApolloProvider>
     </>
   );
