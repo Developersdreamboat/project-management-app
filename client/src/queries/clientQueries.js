@@ -9,6 +9,6 @@ const GET_CLIENTS = gql`
       phone
     }    
   }
-`
+`;
 
 export { GET_CLIENTS };
